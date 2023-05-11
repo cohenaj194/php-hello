@@ -22,7 +22,7 @@ function main(array $args) : array
     }
  
     $body = $greeting;
-    $body = $body . 'total' . ($num_oranges + $num_bananas) . "<br>";
+    $body = $body . 'total: ' . ($num_oranges + $num_bananas) . "<br>";
     return [
         'body' => $body,
     ];
