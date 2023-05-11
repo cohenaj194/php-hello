@@ -10,7 +10,7 @@ function main(array $args) : array
     // if statements
     $num_oranges = 26;
     $num_bananas = 31;
-    $greeting = "";
+    $body = "";
     if(($num_oranges > 25) && ($num_bananas > 30)){
       $greeting = "25% Discount<br>";
     } elseif(($num_oranges > 30) || ($num_bananas > 35)){
@@ -21,8 +21,9 @@ function main(array $args) : array
       $greeting = "No Discount<br>";
     }
  
+    $body = $greeting . $greeting;
     return [
-        'body' => $greeting,
+        'body' => $body,
     ];
 
 }
