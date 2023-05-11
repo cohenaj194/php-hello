@@ -20,9 +20,16 @@ function main(array $args) : array
     } else {
       $greeting = "No Discount<br>";
     }
+
+    $i = 0;
+    $loop_msg = "";
+    while($i < 10){
+        ++$i;
+    }
  
     $body = $greeting;
     $body = $body . 'total: ' . ($num_oranges + $num_bananas) . "<br>";
+    $body = $body . 'i from a loop up to 10: ' . $i . "<br>";
     return [
         'body' => $body,
     ];
