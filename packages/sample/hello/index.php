@@ -21,7 +21,8 @@ function main(array $args) : array
       $greeting = "No Discount<br>";
     }
  
-    $body = $greeting . $greeting;
+    $body = $greeting;
+    $body = $body . 'total' . ($num_oranges + num_bananas) . "<br>";
     return [
         'body' => $body,
     ];
